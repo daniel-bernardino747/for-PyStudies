@@ -1,0 +1,12 @@
+print('=' * 154)
+print('\033[95m{:^154}'.format(':' * 23))
+print('\033[1:95m{:^154}\033[0:95m'.format(':: MAIOR E MENOR ::'))
+print('{:^154}\033[97m'.format(':' * 23))
+n1 = int(input('\n{:>83}'.format('Digite o primeiro número: ')))
+n2 = int(input('{:>83}'.format('Digite o segundo número: ')))
+n3 = int(input('{:>83}'.format('Digite o terceiro número: ')))
+lista = [n1, n2, n3]
+print('\n{:^154}\033[97m'.format(':' * 23))
+print('{:^163}'.format('O \033[91mmaior\033[97m valor é {}'. format(max(lista))))
+print('{:^163}'.format('O \033[94mmenor\033[97m valor é {}'.format(min(n1, n2, n3))))
+print('{:^154}\033[97m'.format(':' * 23))

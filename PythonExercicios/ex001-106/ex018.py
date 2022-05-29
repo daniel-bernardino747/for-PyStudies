@@ -1,0 +1,12 @@
+from math import radians, sin, cos, tan
+print('{}'.format('=' * 154))
+print('\033[4:91m{}\033[0:97m'.format('RELAÇÕES TRIGONOMÉTRICAS'))
+anggraus = float(input('Digite um ângulo em graus (°): '))
+print('{}'.format('=' * 35))
+senog = sin(radians(anggraus))
+cossenog = cos(radians(anggraus))
+tang = tan(radians(anggraus))
+print('O valor do {:23} de {}° é {:^6.2f}!'.format('\033[4:97mseno\033[0:97m', anggraus, senog))
+print('O valor do {:23} de {}° é {:^6.2f}!'.format('\033[4:97mcosseno\033[0:97m', anggraus, cossenog))
+print('O valor da {:23} de {}° é {:^6.2f}!'.format('\033[4:97mtangente\033[0:97m', anggraus, tang))
+print('{}'.format('=' * 35))

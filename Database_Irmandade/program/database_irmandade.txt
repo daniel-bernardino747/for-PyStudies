@@ -1,0 +1,2 @@
+Daniel;34;Casado;
+Rodrigo;53;Solteiro

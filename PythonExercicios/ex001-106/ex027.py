@@ -1,0 +1,13 @@
+"""nome = str(input('Digite seu nome completo: ')).strip().title()
+f = nome.split()
+print('Seu primeiro nome é {}.'.format(f[0]))
+print('Seu último nome é {}.'.format(f[len(f)-1]))"""
+print('=' * 154)
+print('\033[93m{:^154}'.format('o0o' * 10))
+print('{:^154}'.format('o0      SEJA BEM-VINDO      0o'))
+print('\033[93m{:^154}\033[97m'.format('o0o' * 10))
+nome = str(input('\n{:>40}{}'.format(' ', 'Digite seu nome completo: ')).strip().title())
+f = nome.split()
+print('\033[37m{:>40}{}'.format(' ', 'Seu primeiro nome é {}.'.format(f[0])))
+print('{:>40}{}'.format(' ', 'Seu último nome é {}.'.format(f[-1])))
+print('\033[1:97m{:>40}{}'.format(' ', 'Seja bem-vindo {}, {}!'.format(f[-1], f[0])))

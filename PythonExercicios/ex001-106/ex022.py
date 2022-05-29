@@ -1,0 +1,13 @@
+print('=' * 154)
+print('\033[0:97m{:^154}'.format('s.s' * 9))
+print('\033[1:92m{:^154}'.format('BRINCANDO COM O NOME'))
+print('\033[0:97m{:^154}'.format('s.s' * 9))
+nome = str(input('\n{:>78}'.format('Digite seu nome completo: ')).strip().title())
+print('\033[0:37m{:^154}'.format('Analisando seu nome...'))
+print('\033[97m{:>78}\033[94m{}'.format('Seu nome em maiúsculas é ', (nome.upper())))
+print('\033[97m{:>78}\033[94m{}'.format('Seu nome em minúsculas é ', (nome.lower())))
+print('\033[97m{:>78}\033[94m{} \033[97m{}'.format('Seu nome tem ao todo ', (len(nome) - nome.count(' ')), 'letras.'))
+separa = nome.split()
+print('{:>78}\033[94m{} \033[97m{} \033[94m{} \033[97m{}'.format('Seu primeiro nome é ', separa[0], 'e ele tem',
+                                                               nome.find(' '), 'letras.'))
+print('\033[0:37m{:^154}'.format('==='))
